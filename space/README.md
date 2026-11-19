@@ -7,7 +7,7 @@ sdk: static
 app_file: index.html
 pinned: false
 license: other
-short_description: Explore paired refusal decisions on 150 matched XSTest pairs.
+short_description: Explore refusal thresholds on 150 matched XSTest pairs.
 tags:
   - evaluation
   - reproducibility

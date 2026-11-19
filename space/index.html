@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PAIRSAFE · Paired refusal evaluation</title>
+  <meta name="description" content="Explore the refusal threshold for two language models on 150 matched XSTest pairs. AACL-IJCNLP 2026.">
+  <link rel="stylesheet" href="style.css"><script defer src="explorer.js"></script>
+</head>
+<body>
+<main>
+<header>
+  <p class="venue">AACL-IJCNLP 2026 &nbsp; / &nbsp; Long paper</p>
+  <h1>PAIRSAFE</h1>
+  <p class="deck">How many matched pairs can one refusal threshold separate?</p>
+  <p>Wenzhang Du &nbsp;·&nbsp; 150 XSTest pairs &nbsp;·&nbsp; 2 models</p>
+  <nav aria-label="Research links"><a href="https://aclanthology.org/2026.aacl-long.124/" target="_blank" rel="noopener">Paper ↗</a><a href="https://github.com/dqswordman/pairsafe" target="_blank" rel="noopener">GitHub ↗</a><a href="https://dqswordman.github.io/technical-reports/pairsafe/" target="_blank" rel="noopener">Technical report ↗</a><a lang="zh" href="https://dqswordman.github.io/zh/technical-reports/pairsafe/" target="_blank" rel="noopener">中文报告 ↗</a></nav>
+</header>
+<section aria-labelledby="explore">
+  <h2 id="explore">Explore one shared threshold</h2>
+  <p>Move the boundary across the archived scores. A pair counts when its safe member falls at or below the threshold and its unsafe member falls above it.</p>
+  <p id="status" role="status">Loading the verified threshold counts…</p>
+  <div id="controls" hidden>
+    <div class="fields"><label>Model<select id="model"><option>Qwen2.5-3B-Instruct</option><option>SmolLM2-1.7B-Instruct</option></select></label>
+    <button id="best" type="button">Use best in-sample threshold</button></div>
+    <label class="range-label" for="threshold">Refusal threshold <output id="theta" for="threshold"></output></label>
+    <input id="threshold" type="range" min="0" step="1" aria-describedby="threshold-note">
+    <div class="ends" aria-hidden="true"><span>Lower threshold</span><span>Higher threshold</span></div>
+    <dl class="counts" aria-live="polite"><div><dt>Both members correct</dt><dd id="paired"></dd></div><div><dt>Safe members accepted</dt><dd id="safe"></dd></div><div><dt>Unsafe members refused</dt><dd id="unsafe"></dd></div></dl>
+    <p id="threshold-note" class="note">The slider uses one threshold on all 150 pairs. The published held-out metric fits five thresholds on separate training folds.</p>
+  </div>
+</section>
+<section aria-labelledby="reference">
+  <h2 id="reference">Published results</h2>
+  <div class="scroll"><table><caption>Primary 2+2 candidate margin, 150 pairs per model</caption><thead><tr><th scope="col">Model</th><th scope="col">Ordering</th><th scope="col">Best threshold</th><th scope="col">Held-out</th></tr></thead>
+  <tbody><tr><th scope="row">Qwen2.5-3B</th><td>148 / 150</td><td>133 / 150</td><td>132 / 150</td></tr><tr><th scope="row">SmolLM2-1.7B</th><td>146 / 150</td><td>120 / 150</td><td>114 / 150</td></tr></tbody></table></div>
+  <p class="note">In the separate Qwen generation check, 105 of 150 pairs received the expected labels on both members.</p>
+</section>
+<footer><a class="download" href="https://huggingface.co/spaces/DQSWORDMAN/pairsafe/resolve/v1.0.0/pairsafe-v1.0.0.zip?download=true" target="_blank" rel="noopener">Download CPU release · v1.0.0 ↓</a><a href="https://github.com/dqswordman/pairsafe/blob/v1.0.0/docs/reproduction.md" target="_blank" rel="noopener">Reproduction guide ↗</a></footer>
+</main>
+</body></html>

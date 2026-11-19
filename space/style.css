@@ -1,0 +1,41 @@
+:root{color-scheme:light;--ink:#162e28;--green:#185c4a;--muted:#4c6057;--line:#cbd9d0;--wash:#eff5ef}
+*{box-sizing:border-box}
+html{font:16px/1.55 "Inter","Segoe UI",sans-serif;color:var(--ink);background:#f8faf7}
+body{margin:0}
+main{max-width:900px;margin:auto;padding:40px clamp(18px,5vw,58px) 48px}
+header,.counts{border-top:3px solid var(--green)}
+header{padding-top:20px}
+h1,h2,p,dl{margin:0}
+h1{font:600 clamp(2.9rem,8vw,4.8rem)/1.05 "Baskerville",Georgia,serif;letter-spacing:-.045em;margin:.32em 0 .16em}
+h2{font:600 clamp(1.55rem,4vw,2rem)/1.2 "Baskerville",Georgia,serif;letter-spacing:-.025em;margin-bottom:10px}
+.venue{font-size:.77rem;font-weight:700;letter-spacing:.095em;text-transform:uppercase;color:var(--green)}
+.deck{font-size:clamp(1.1rem,2.8vw,1.45rem);max-width:42rem;color:var(--ink);margin-bottom:.3rem}
+p{color:var(--muted);max-width:70ch}
+a{color:var(--green);font-weight:600;text-decoration-thickness:1px;text-underline-offset:.23em}
+a:hover{color:#102e25}
+nav,footer,.fields{display:flex;gap:10px 22px;align-items:center;flex-wrap:wrap}
+nav{margin-top:14px}
+section{margin-top:32px;padding-top:24px;border-top:1px solid var(--line)}
+.fields{justify-content:space-between;align-items:flex-end;margin:20px 0}
+select,button{font:inherit;color:var(--ink);background:white;border:1px solid #879c90;border-radius:4px;padding:.38rem .65rem}
+select{display:block;margin-top:4px;max-width:100%}
+button{cursor:pointer;font-size:.9rem}
+button:hover{background:var(--wash)}
+label{font-weight:600}
+.range-label,.ends{display:flex;justify-content:space-between;align-items:baseline}
+output,dd,td{font-variant-numeric:tabular-nums}
+input[type=range]{width:100%;margin:9px 0 2px;accent-color:var(--green);cursor:pointer}
+.ends,.note,caption{font-size:.88rem;color:var(--muted)}
+.counts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;background:var(--wash);margin:20px 0 12px;padding:16px 18px;border-top-width:2px}
+dt{font-size:.87rem}dd{margin:2px 0 0;font-weight:650;font-size:clamp(1.15rem,4.5vw,1.75rem);white-space:nowrap}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;text-align:left}
+caption{text-align:left;padding-bottom:8px}
+th,td{padding:8px 12px 8px 0;border-bottom:1px solid var(--line);white-space:nowrap}
+section .note{margin-top:12px}
+footer{margin-top:30px}
+.download{padding:8px 14px;color:white;background:var(--green);border-radius:4px;text-decoration:none}
+.download:hover{color:white;background:#104533}
+:focus-visible{outline:3px solid #346683;outline-offset:3px}
+[hidden]{display:none!important}
+@media(max-width:470px){main{padding-top:20px}.counts{gap:8px;padding:12px 10px}dt{font-size:.78rem}.fields{gap:12px}nav,footer{gap:10px 15px}}

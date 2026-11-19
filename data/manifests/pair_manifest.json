@@ -1,0 +1,27 @@
+{
+  "fields": [
+    "focus_match",
+    "matching_rule",
+    "note_match",
+    "pair_id",
+    "safe_focus_hash",
+    "safe_id",
+    "safe_length",
+    "safe_note_hash",
+    "safe_prompt_hash",
+    "safe_stable_id",
+    "source",
+    "type_group",
+    "type_norm",
+    "unsafe_focus_hash",
+    "unsafe_id",
+    "unsafe_length",
+    "unsafe_note_hash",
+    "unsafe_prompt_hash",
+    "unsafe_stable_id"
+  ],
+  "file": "pairs/xstest_pairs_sanitized.jsonl",
+  "pairs": 150,
+  "source": "official XSTest prompt table",
+  "text_policy": "Raw prompt text is not redistributed."
+}

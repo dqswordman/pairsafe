@@ -1,0 +1,25 @@
+{
+  "archive": "pairsafe-data",
+  "created_utc": "2026-05-20T03:38:01Z",
+  "files": [
+    "generation/qwen_generation_labels_sanitized.jsonl",
+    "manifests/generation_manifest.json",
+    "manifests/pair_manifest.json",
+    "manifests/score_manifest.json",
+    "pairs/xstest_pairs_sanitized.jsonl",
+    "scores/qwen2p5_3b_margin_scores_sanitized.jsonl",
+    "scores/qwen_candidate_ablation_scores_sanitized.jsonl",
+    "scores/smollm2_1p7b_margin_scores_sanitized.jsonl",
+    "tables/pairsafe_actual_metadata_proxy_audit.csv",
+    "tables/pairsafe_calibrated_pcda.csv",
+    "tables/pairsafe_candidate_ablation.csv",
+    "tables/pairsafe_construction_ablation.csv",
+    "tables/pairsafe_exact_focus_subset.csv",
+    "tables/pairsafe_generation_refusal.csv",
+    "tables/pairsafe_main_results.csv",
+    "tables/pairsafe_statistical_tests.csv",
+    "tables/pairsafe_type_breakdown.csv"
+  ],
+  "pair_count": 150,
+  "purpose": "Derived, sanitized PAIRSAFE review artifact"
+}

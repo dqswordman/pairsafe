@@ -1,0 +1,11 @@
+diagnostic,psa,nested_cal_pcda
+source,0.500,0.000
+normalized_type,0.500,0.000
+pair_id,0.500,0.000
+focus,0.497,0.000
+note,0.683,0.367
+character_length,0.540,0.256
+combined_residual_probe,0.656,0.397
+raw_label_coded_type,1.000,1.000
+qwen_residual_score,0.827,0.689
+smollm_residual_score,0.821,0.551

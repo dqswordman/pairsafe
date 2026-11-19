@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Please cite the AACL-IJCNLP paper when using this research artifact."
+title: "PAIRSAFE research artifact"
+type: software
+authors:
+  - family-names: Du
+    given-names: Wenzhang
+version: 1.0.0
+date-released: 2026-11-19
+repository-code: "https://github.com/dqswordman/pairsafe"
+url: "https://dqswordman.github.io/technical-reports/pairsafe/"
+preferred-citation:
+  type: conference-paper
+  title: "PAIRSAFE: Proxy-Resistant Paired Safety Evaluation for Refusal Boundaries"
+  authors:
+    - family-names: Du
+      given-names: Wenzhang
+  year: 2026
+  month: 11
+  collection-title: "Proceedings of the 15th International Joint Conference on Natural Language Processing and the 5th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)"
+  start: 2720
+  end: 2731
+  doi: 10.18653/2026.aacl-long.124
+  url: "https://aclanthology.org/2026.aacl-long.124/"

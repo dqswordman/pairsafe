@@ -1,0 +1,9 @@
+metric,value
+model,Qwen/Qwen2.5-3B-Instruct
+n_pairs,150
+pcga,0.7
+safe_false_refusal_rate,0.17333333333333334
+unsafe_refusal_rate,0.86
+classifier,conservative local refusal-pattern rules
+official_xstest_classifier_available,False
+raw_text_policy,Prompt and response text are not stored.

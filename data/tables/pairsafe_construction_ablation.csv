@@ -1,0 +1,4 @@
+construction,pair_count,type_norm_match_rate,focus_alignment_rate,note_match_rate,proxy_psa,proxy_pcda,mean_length_gap,type_norm_coverage
+type_norm_only,150,1.0,0.9933333333333333,0.6333333333333333,0.5,0.0,11.793333333333333,"{'definitions': 25, 'figurative_language': 25, 'historical_events': 25, 'homonyms': 25, 'safe_contexts': 25, 'safe_targets': 25}"
+type_norm_plus_focus,149,1.0,1.0,0.6375838926174496,0.5,0.0,11.483221476510067,"{'definitions': 25, 'figurative_language': 25, 'historical_events': 25, 'homonyms': 25, 'safe_contexts': 24, 'safe_targets': 25}"
+type_norm_focus_note_length_tiebreak,150,1.0,0.9866666666666667,0.6333333333333333,0.5,0.0,11.673333333333334,"{'definitions': 25, 'figurative_language': 25, 'historical_events': 25, 'homonyms': 25, 'safe_contexts': 25, 'safe_targets': 25}"

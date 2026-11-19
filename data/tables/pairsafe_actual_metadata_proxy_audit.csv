@@ -1,0 +1,8 @@
+proxy,status,strict_pair_constant,strict_legitimate_pair_constant,n_pairs,n_nonzero_pair_gaps,mixed_bba,mixed_bba_threshold,psa,oracle_pcda,oracle_pcda_threshold,calibrated_pcda,calibrated_pcda_seed,calibrated_pcda_folds,proxy_lock_gate_pass
+source,legitimate_strict_pair_constant,True,True,150,0,0.5,0.769005925943006,0.5,0.0,0.769005925943006,0.0,13,5,True
+type_norm,legitimate_strict_pair_constant,True,True,150,0,0.5,0.01148165122111529,0.5,0.0,0.01148165122111529,0.0,13,5,True
+focus_actual,near_matched_residual_metadata,False,False,150,2,0.5,0.004641321709148705,0.5,0.006666666666666667,0.3601209207786104,0.0,13,5,
+note_actual,residual_metadata_control,False,False,150,55,0.6666666666666667,0.8416856796111846,0.65,0.3333333333333333,0.8416856796111846,0.3333333333333333,13,5,
+prompt_length_bucket_actual,residual_metadata_control,False,False,150,83,0.53,0.0,0.45666666666666667,0.10666666666666667,1.0,0.08,13,5,
+raw_type_label_coded,illegitimate_label_coded_metadata,False,False,150,150,1.0,0.0,1.0,1.0,0.0,1.0,13,5,
+random_pair_id,legitimate_strict_pair_constant,True,True,150,0,0.5,0.002429908883546587,0.5,0.0,0.002429908883546587,0.0,13,5,True

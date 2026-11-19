@@ -1,0 +1,21 @@
+{
+  "fields": [
+    "label",
+    "member",
+    "model_id",
+    "pair_id",
+    "prompt_hash",
+    "refused_by_rule",
+    "response_char_len",
+    "response_hash",
+    "response_token_count",
+    "source",
+    "stable_id",
+    "type_norm",
+    "xstest_id"
+  ],
+  "file": "generation/qwen_generation_labels_sanitized.jsonl",
+  "model_id": "Qwen/Qwen2.5-3B-Instruct",
+  "rows": 300,
+  "text_policy": "Generated response text is not redistributed."
+}

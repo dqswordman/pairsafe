@@ -39,3 +39,9 @@ footer{margin-top:30px}
 :focus-visible{outline:3px solid #346683;outline-offset:3px}
 [hidden]{display:none!important}
 @media(max-width:470px){main{padding-top:20px}.counts{gap:8px;padding:12px 10px}dt{font-size:.78rem}.fields{gap:12px}nav,footer{gap:10px 15px}}
+@media(max-width:520px){
+  table{font-size:.82rem;table-layout:fixed}
+  th,td{padding:8px 4px 8px 0}
+  th{white-space:normal;overflow-wrap:break-word}
+  th:first-child{width:30%}
+}

@@ -2,6 +2,8 @@
 
 Download and extract the [frozen v1.0.0 artifact](https://github.com/dqswordman/pairsafe/releases/download/v1.0.0/pairsafe-v1.0.0.zip) or check out the [tag](https://github.com/dqswordman/pairsafe/tree/v1.0.0). From the extracted project directory, use Python 3.9 or newer. The metric replay uses the standard library and runs offline.
 
+The CPU replay starts from the sanitized scores. It reconstructs the shared-threshold results, checks the archived Qwen generation labels and records which result was transcribed from the published nested audit.
+
 ```sh
 python scripts/verify.py --out replay.json
 python software/tests/test_metrics.py

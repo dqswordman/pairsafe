@@ -5,7 +5,7 @@ Wenzhang Du · AACL-IJCNLP 2026 · Long Paper · pp. 2720–2731
 
 [Project overview](https://dqswordman.github.io/research/pairsafe/) · [Paper](https://aclanthology.org/2026.aacl-long.124/) · [Technical report](https://dqswordman.github.io/technical-reports/pairsafe/) · [中文技术报告](https://dqswordman.github.io/zh/technical-reports/pairsafe/) · [Hugging Face Space](https://huggingface.co/spaces/DQSWORDMAN/pairsafe) · [Frozen release](https://github.com/dqswordman/pairsafe/releases/tag/v1.0.0)
 
-On **150 matched safe/unsafe pairs**, Qwen2.5-3B ranks 148 correctly, yet a threshold fitted on other pairs classifies both members correctly in 132. Its separate generation check succeeds on both members in 105 pairs. PAIRSAFE makes all three decisions visible.
+A model can give the unsafe member of a pair a higher refusal score and still refuse the safe member. On **150 matched XSTest pairs**, Qwen2.5-3B ordered 148 correctly. A threshold learned on other pairs separated both members correctly in 132. An automatic rule applied to Qwen’s generated answers counted 105 pairs with both desired outcomes.
 
 ![Ordering and shared-threshold decisions for the two models](docs/figures/paired-decisions.png)
 
